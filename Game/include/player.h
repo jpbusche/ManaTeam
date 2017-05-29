@@ -8,7 +8,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "core/sprite.h"
+#include "sprite.h"
 #include "map.h"
 #include "sight.h"
 #include "weapon.h"

@@ -1,10 +1,10 @@
 #ifndef QUADTREE_H
 #define QUADTREE_H
 
-#include <core/rect.h>
 #include <vector>
-#include <core/object.h>
 #include <array>
+#include "rect.h"
+#include "object.h"
 
 using namespace std;
 using std::vector;

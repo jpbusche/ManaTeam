@@ -6,10 +6,10 @@
  * Licença: LGPL. Sem copyright.
  */
 #include "player.h"
-#include "core/rect.h"
-#include "core/level.h"
-#include "core/environment.h"
-#include "core/keyboardevent.h"
+#include "rect.h"
+#include "level.h"
+#include "environment.h"
+#include "keyboardevent.h"
 //#include "pause.h"
 #include <string>
 

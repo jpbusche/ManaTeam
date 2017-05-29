@@ -8,8 +8,8 @@
 #ifndef STAGE_H
 #define STAGE_H
 
-#include <core/level.h>
-#include <core/rect.h>
+#include "level.h"
+#include "rect.h"
 
 #include "map.h"
 #include "room.h"

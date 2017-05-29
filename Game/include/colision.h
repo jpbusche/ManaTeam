@@ -1,7 +1,7 @@
 #ifndef COLISION_H
 #define COLISION_H
 
-#include <core/rect.h>
+#include "rect.h"
 
 #include "item.h"
 #include "player.h"

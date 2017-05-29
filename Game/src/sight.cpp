@@ -1,6 +1,6 @@
 #include <iostream>
-#include <core/animation.h>
-#include <core/environment.h>
+#include "animation.h"
+#include "environment.h"
 
 #include "sight.h"
 

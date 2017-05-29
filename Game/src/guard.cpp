@@ -1,8 +1,8 @@
 #include "guard.h"
 
-#include "core/level.h"
-#include "core/environment.h"
-#include "core/keyboardevent.h"
+#include "level.h"
+#include "environment.h"
+#include "keyboardevent.h"
 
 #include <iostream>
 

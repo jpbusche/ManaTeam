@@ -8,8 +8,8 @@
 #ifndef TEST_H
 #define TEST_H
 
-#include <core/game.h>
- #include "player.h"
+#include "game.h"
+#include "player.h"
 
 class SevenKeys : public Game
 {

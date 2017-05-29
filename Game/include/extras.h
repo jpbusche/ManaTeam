@@ -1,7 +1,7 @@
 #ifndef EXTRAS_H
 #define EXTRAS_H
 
-#include <core/level.h>
+#include "level.h"
 
 class Image;
 

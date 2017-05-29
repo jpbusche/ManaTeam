@@ -1,7 +1,7 @@
 #include <list>
 #include <utility>
-#include <ijengine/core/environment.h>
-#include <ijengine/core/rect.h>
+#include "environment.h"
+#include "rect.h"
 #include <map>
 
 #include "map.h"

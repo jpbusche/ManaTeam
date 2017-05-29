@@ -1,7 +1,7 @@
 #include <iostream>
-#include <core/image.h>
-#include <core/keyboardevent.h>
-#include <core/environment.h>
+#include "image.h"
+#include "keyboardevent.h"
+#include "environment.h"
 
 #include "item.h"
 

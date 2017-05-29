@@ -1,7 +1,7 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include <core/image.h>
+#include "image.h"
 #include <string>
 
 using namespace std;

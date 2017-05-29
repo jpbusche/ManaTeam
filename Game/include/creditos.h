@@ -1,7 +1,7 @@
 #ifndef CREDITOS_H
 #define CREDITOS_H
 
-#include <core/level.h>
+#include "level.h"
 
 class Image;
 

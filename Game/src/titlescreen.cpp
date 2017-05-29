@@ -7,9 +7,9 @@
  */
 #include "titlescreen.h"
  
-#include <ijengine/util/button.h>
-#include <core/font.h>
-#include <core/environment.h>
+#include "button.h"
+#include "font.h"
+#include "environment.h"
 
 #include <iostream>
 using namespace std;

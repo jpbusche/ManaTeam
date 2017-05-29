@@ -8,9 +8,11 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
+#include <list>
 #include <string>
 #include <memory>
 
+using std::list;
 using std::string;
 using std::unique_ptr;
 
@@ -29,6 +31,7 @@ public:
     virtual ~Object();
 
     Object * parent() const;
+    const list<Object *>& children() const;
     ObjectID id() const;
 
     double x() const;
@@ -38,14 +41,29 @@ public:
 
     const Rect& bounding_box() const;
 
+    bool visible() const;
+
     void set_x(double x);
     void set_y(double y);
     void set_w(double w);
     void set_h(double h);
 
+    void set_visible(bool visible = true);
+
+    bool walkable();
+    double mass();
+
+    void set_walkable(bool walkable = true);
+    void set_mass(double mass);
+
     void set_position(double x, double y);
     void set_dimensions(double w, double h);
     void set_parent(Object *parent);
+
+    typedef enum { NONE, LEFT, CENTER, RIGHT, TOP, MIDDLE, BOTTOM }
+        Alignment;
+
+    void align_to(const Object* object, Alignment xaxis, Alignment yaxis);
 
     void add_child(Object *child);
     void remove_child(Object *child);

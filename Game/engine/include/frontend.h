@@ -8,32 +8,27 @@
 #ifndef FRONT_END_H
 #define FRONT_END_H
 
-#include "core/level.h"
-#include "core/mousebuttoneventlistener.h"
-#include "core/joystickeventlistener.h"
-#include "core/keyboardeventlistener.h"
+#include "level.h"
+#include "listener.h"
 
 #include <memory>
 
-using std::shared_ptr;
+using std::unique_ptr;
 
-class Image;
-
-class FrontEnd : public Level, MouseButtonEventListener, JoyStickEventListener,
-    KeyboardEventListener
+class FrontEnd : public Level, public Listener
 {
 public:
-    FrontEnd(const string& next, const string& image,
+    FrontEnd(const string& id, const string& next, const string& image,
         unsigned long duration = 3000, const Color& background = Color::BLACK);
     ~FrontEnd();
 
-    bool onMouseButtonEvent(const MouseButtonEvent& event);
-    bool onKeyboardEvent(const KeyboardEvent& event);
-    bool onJoyStickEvent(const JoyStickEvent& event);
+    bool on_event(const MouseButtonEvent& event);
+    bool on_event(const KeyboardEvent& event);
+    bool on_event(const JoyStickEvent& event);
 
 private:
     class Impl;
-    shared_ptr<Impl> m_impl;
+    unique_ptr<Impl> m_impl;
 
     void update_self(unsigned long elapsed);
     void draw_self();

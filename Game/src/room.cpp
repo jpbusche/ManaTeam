@@ -3,11 +3,11 @@
 #include <iostream>
 #include <list>
 
-#include <core/font.h>
-#include <core/rect.h>
-#include <core/environment.h>
-#include <core/canvas.h>
-#include <core/image.h>
+#include "font.h"
+#include "rect.h"
+#include "environment.h"
+#include "canvas.h"
+#include "image.h"
 
 #include "room.h"
 

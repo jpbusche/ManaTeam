@@ -3,11 +3,11 @@
  * Data: 20/04/2015
  * Licença: LGPL. Sem copyright.
  */
-#include <core/environment.h>
-#include <core/music.h>
-#include <core/soundeffect.h> 
-#include <core/audiomanager.h>
-#include <core/audiomanagerwrapper.h>
+#include "environment.h"
+#include "music.h"
+#include "soundeffect.h"
+#include "audiomanager.h"
+#include "audiomanagerwrapper.h"
 
 #include <cmath>
 

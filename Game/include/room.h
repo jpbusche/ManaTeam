@@ -1,8 +1,8 @@
 #ifndef ROOM_H
 #define ROOM_H
 
-#include <core/object.h>
-#include <core/rect.h>
+#include "object.h"
+#include "rect.h"
 #include <list>
 
 #include "item.h"
