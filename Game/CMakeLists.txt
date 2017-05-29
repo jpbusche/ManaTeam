@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(7keys LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Set directory folders
 
@@ -21,7 +23,7 @@ include_directories(${ENGINE_INCLUDE_DIR})
 
 # Compilation Flags
 
-set(COMPILE_FLAGS "${COMPILE_FLAGS} -std=c++11 -W -Wall -pedantic -std=c++11 -Wshadow -O2 -g")
+set(COMPILE_FLAGS "${COMPILE_FLAGS} -W -Wall -pedantic -Wshadow -O2 -g")
 
 # Executable
 
