@@ -11,6 +11,5 @@ compiler:
   - g++
 
 script:
-  - cd Game/
   - cmake .
   - make
