@@ -1,0 +1,12 @@
+Package: 7keys
+Version: 1.0
+Architecture: amd64
+Maintainer: João Paulo Busche <joaopaulo.busche@gmail.com>
+Installed-Size: 5800
+Depends: cmake, libc6, libsdl2-2.0-0, libsdl2-image-2.0-0, libsdl2-ttf-2.0-0, libsdl2-mixer-2.0-0
+Homepage: https://github.com/jpbusche/ManaTeam
+Priority: optional
+Section: misc
+Size: 5800
+Original-Maintainer: João Paulo Busche <joaopaulo.busche@gmail.com>
+Description: A simple game, where your objective is escape a nazi facility

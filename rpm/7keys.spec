@@ -22,10 +22,10 @@ make -j
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p ${RPM_BUILD_ROOT}/usr/bin/
-mkdir -p ${RPM_BUILD_ROOT}/usr/res/
-cp res/*.* ${RPM_BUILD_ROOT}/usr/res/
-cp 7keys ${RPM_BUILD_ROOT}/usr/bin/
+mkdir -p ${RPM_BUILD_ROOT}/usr/bin
+mkdir -p ${RPM_BUILD_ROOT}/etc/7keys/res
+mv etc/7keys/res ${RPM_BUILD_ROOT}/etc/7keys/
+cp -a 7keys ${RPM_BUILD_ROOT}/usr/bin/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -34,8 +34,8 @@ rm -rf $RPM_BUILD_ROOT
 %license LICENSE
 %defattr(-,root,root,-)
 /usr/bin/7keys
-/usr/res
+/etc/7keys/
 
 %changelog
-* Sat Jun 17 2017 João Paulo Busche <joaopaulo.busche@gmail.com>
+* Mon Jun 19 2017 João Paulo Busche <joaopaulo.busche@gmail.com>
 - 

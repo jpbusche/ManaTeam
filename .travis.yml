@@ -11,5 +11,6 @@ compiler:
   - g++
 
 script:
+  - cd 7keys-1.0/
   - cmake .
   - make

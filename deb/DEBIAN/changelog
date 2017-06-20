@@ -1,0 +1,10 @@
+7keys (1.0) unstable; urgency=medium
+
+  * Initial release
+  * Character walking, jumping, idle, attacking
+  * Full-screen implemented
+  * Five stages completed
+  * Bonus stage completed
+  * Menu completed
+
+-- João Paulo Busche <joaopaulo.busche@gmail.com> Mon, 19 Jun 2017 21:23:08 -0300
