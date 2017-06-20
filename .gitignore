@@ -49,6 +49,7 @@
 
 # IJE
 /IJE_Manateam/*
+.images/
 bin
 
 # CMake
